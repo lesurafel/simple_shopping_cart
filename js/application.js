@@ -17,3 +17,19 @@ var updateSubPrice = function (ele) {
 
   return subPrice;
 }
+
+var sum = function (acc, x) { return acc + x; };
+
+var updateTotalPrice = function () {
+  var totalSubPrice = [];
+  $('.main .row').each(function (i, ele) {
+    var subPrice = updateSubPrice(ele);
+    totalSubPrice.push(subPrice);
+  });
+  var totalPrice = totalSubPrice.reduce(sum);
+  if (totalPrice) {
+    $('#totalPrice').html(totalPrice + '.00');
+  } else {
+    $('#totalPrice').html('--.--');
+  }
+}
