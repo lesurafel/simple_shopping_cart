@@ -33,3 +33,13 @@ var updateTotalPrice = function () {
     $('#totalPrice').html('--.--');
   }
 }
+
+$(document).ready(function () {
+  updateTotalPrice();
+
+  $(document).on('input', function () {
+    updateTotalPrice();
+  });
+
+  
+});
