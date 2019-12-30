@@ -15,6 +15,56 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="main">
+        <div class="row">
+          <div class="col-xs-3 name">Salmon</div>
+          <div class="col-xs-3 unitPrice">$60.00</div>
+          <div class="col-xs-3 cost"><b>QTY </b><input type="number" value="" /></div>
+          <div class="col-xs-1"><button class="btn btn-light btn-sm remove">Cancel</button></div>
+          <div class="col-xs-2 subPrice">$--.--</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 name">Tuna</div>
+          <div class="col-xs-3 unitPrice">$50.00</div>
+          <div class="col-xs-3 cost"><b>QTY </b><input type="number" value="" /></div>
+          <div class="col-xs-1"><button class="btn btn-light btn-sm remove">Cancel</button></div>
+          <div class="col-xs-2 subPrice">$--.--</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 name">Carp</div>
+          <div class="col-xs-3 unitPrice">$40.00</div>
+          <div class="col-xs-3 cost"><b>QTY </b><input type="number" value="" /></div>
+          <div class="col-xs-1"><button class="btn btn-light btn-sm remove">Cancel</button></div>
+          <div class="col-xs-2 subPrice">$--.--</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 name">Pork</div>
+          <div class="col-xs-3 unitPrice">$50.00</div>
+          <div class="col-xs-3 cost"><b>QTY </b><input type="number" value="" /></div>
+          <div class="col-xs-1"><button class="btn btn-light btn-sm remove">Cancel</button></div>
+          <div class="col-xs-2 subPrice">$--.--</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 name">Beef</div>
+          <div class="col-xs-3 unitPrice">$40.00</div>
+          <div class="col-xs-3 cost"><b>QTY </b><input type="number" value="" /></div>
+          <div class="col-xs-1"><button class="btn btn-light btn-sm remove">Cancel</button></div>
+          <div class="col-xs-2 subPrice">$--.--</div>
+        </div>
+      </div> <!-- End of main -->
 
+      <form class="col-12 mt-2 mb-4" id="addItem">
+        <div class="row">
+          <div class="col-xs-3 newItem"><input name="itemName" type="text" placeholder="Apple" required/></div>
+          <div class="col-xs-3 newPrice"><input name="unitPrice" type="number" placeholder="30"/></div>
+          <div class="col-xs-3"><button class="btn btn-primary btn-sm creat">Creat</button></div>
+        </div>
+      </form>
+
+        <div class="col-12">
+            <h3>Total Price: $ <span id="totalPrice">00.00</span></h3>
+        </div>
   </body>
 </html>
