@@ -62,4 +62,9 @@ $(document).ready(function () {
     $(this).find('[name=itemName]').val('');
     $(this).find('[name=unitPrice]').val('');
   });
+
+  $(document).on('click', '.btn.remove', function (event) {
+    $(this).closest('.row').remove();
+    updateTotalPrice();
+  });
 });
